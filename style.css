@@ -1,0 +1,115 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Arial', sans-serif;
+}
+#img-fondo {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  object-fit: cover; /* No se deforma */
+  z-index: -1; /* La manda atrás de todo */
+}
+
+/* 2. NAV ARRIBA FIJO */
+header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 100; /* Encima de la imagen */
+  background: rgba(0, 0, 0, 0.6); /* Negro transparente */
+}
+
+.nav-gym {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 60px;
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+.logo-nav {
+  color: #ff3c00;
+  font-size: 28px;
+  font-weight: 900;
+  text-decoration: none;
+}
+
+.links-nav {
+  display: flex;
+  gap: 30px;
+}
+
+.link-nav {
+  color: white;
+  text-decoration: none;
+  font-size: 16px;
+}
+
+.link-nav:hover {
+  color: #ff3c00;
+}
+
+#button-singup {
+  background: #ff3c00;
+  color: white;
+  border: none;
+  padding: 12px 30px;
+  border-radius: 5px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+/* 3. TEXTO + BOTÓN AL CENTRO DE LA PANTALLA */
+main {
+  height: 100vh; /* Ocupa toda la pantalla */
+  display: flex;
+  justify-content: center; /* Centro horizontal */
+  align-items: center; /* Centro vertical */
+  position: relative;
+  z-index: 10; /* Encima de la imagen */
+}
+
+.hero-centro {
+  text-align: center;
+  color: white;
+}
+
+.hero-centro h1 {
+  font-size: 64px;
+  font-weight: 900;
+  line-height: 1.1;
+  text-shadow: 4px 4px 10px rgba(0,0,0,0.9); /* Sombra fuerte para que se lea */
+  margin-bottom: 15px;
+}
+
+.hero-centro p {
+  font-size: 22px;
+  margin-bottom: 35px;
+  text-shadow: 2px 2px 6px rgba(0,0,0,0.9);
+}
+
+.btn-unirse {
+  background: #ff3c00;
+  color: white;
+  border-radius: 6px;
+  border: none;
+  padding: 18px 50px;
+  font-size: 20px;
+  font-weight: bold;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.btn-unirse:hover {
+  background: #e63600;
+  transform: scale(1.05); 
+}
